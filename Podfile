@@ -8,6 +8,7 @@ target 'appFireBase' do
   pod 'Firebase/Auth'
   pod 'Firebase/Database'
   pod 'FBSDKLoginKit'
+  pod 'GoogleSignIn'
 
 
 

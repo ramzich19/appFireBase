@@ -23,7 +23,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Если ты попал на данную страницу, значит ты успешно прошел регистрацию и вход :)" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="i7P-ZA-UZG">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="Если ты попал на данную страницу, значит ты успешно прошел регистрацию и вход :)" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="i7P-ZA-UZG">
                                 <rect key="frame" x="16" y="253" width="382" height="235"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -43,6 +43,22 @@
                         <barButtonItem key="leftBarButtonItem" title="Выйти" id="uhO-dS-ehx">
                             <connections>
                                 <action selector="logoutAction:" destination="BYZ-38-t0r" id="kUr-ID-8IZ"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="S5B-ie-ILC">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="w3C-yO-c7R">
+                                <rect key="frame" x="347" y="5" width="47" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Share">
+                                    <color key="titleColor" systemColor="linkColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="shareAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NF4-nc-dju"/>
+                                </connections>
+                            </button>
+                            <connections>
+                                <action selector="shareAction:" destination="BYZ-38-t0r" id="lTZ-er-29M"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -242,12 +258,13 @@
                                             </subviews>
                                         </stackView>
                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="qzq-iy-XhA">
-                                            <rect key="frame" x="162.5" y="193" width="89.5" height="31"/>
+                                            <rect key="frame" x="176.5" y="193" width="61" height="38"/>
                                             <subviews>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ADD-Gq-6FI">
-                                                    <rect key="frame" x="0.0" y="0.0" width="89.5" height="31"/>
-                                                    <state key="normal" title="Button"/>
-                                                    <buttonConfiguration key="configuration" style="plain" title="Сбросить"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="61" height="38"/>
+                                                    <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="16"/>
+                                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                    <state key="normal" title="Сбросить"/>
                                                     <connections>
                                                         <action selector="forgotPasswordAction:" destination="dJz-3y-b22" eventType="touchUpInside" id="b2S-Z9-xck"/>
                                                     </connections>
@@ -308,6 +325,9 @@
         <image name="pngegg" width="2658" height="2298"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="linkColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

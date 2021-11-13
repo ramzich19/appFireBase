@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		234A31B756AE2CB5A5506D60 /* Pods_appFireBase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E0BCAB26CEB0A466EE59926 /* Pods_appFireBase.framework */; };
+		E814033A273FFCEB0036DF7F /* MyActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8140339273FFCEB0036DF7F /* MyActivity.swift */; };
 		E869690D273D73580059EE93 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E869690C273D73580059EE93 /* AppDelegate.swift */; };
 		E869690F273D73580059EE93 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E869690E273D73580059EE93 /* SceneDelegate.swift */; };
 		E8696911273D73580059EE93 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8696910273D73580059EE93 /* ViewController.swift */; };
@@ -23,6 +24,7 @@
 		5293E648B2D9B5529DC654C3 /* Pods-appFireBase.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-appFireBase.release.xcconfig"; path = "Target Support Files/Pods-appFireBase/Pods-appFireBase.release.xcconfig"; sourceTree = "<group>"; };
 		5E0BCAB26CEB0A466EE59926 /* Pods_appFireBase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_appFireBase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6ACB0C5F7FA781365F8AF915 /* Pods-appFireBase.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-appFireBase.debug.xcconfig"; path = "Target Support Files/Pods-appFireBase/Pods-appFireBase.debug.xcconfig"; sourceTree = "<group>"; };
+		E8140339273FFCEB0036DF7F /* MyActivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyActivity.swift; sourceTree = "<group>"; };
 		E8696909273D73580059EE93 /* appFireBase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = appFireBase.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E869690C273D73580059EE93 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E869690E273D73580059EE93 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -96,6 +98,7 @@
 				E8696920273D7DAD0059EE93 /* AuthViewController.swift */,
 				E8696922273D83C60059EE93 /* GoogleService-Info.plist */,
 				E87D1145273E8C9400FE461A /* ForgotPasswordViewController.swift */,
+				E8140339273FFCEB0036DF7F /* MyActivity.swift */,
 			);
 			path = appFireBase;
 			sourceTree = "<group>";
@@ -220,6 +223,7 @@
 				E87D1146273E8C9400FE461A /* ForgotPasswordViewController.swift in Sources */,
 				E8696911273D73580059EE93 /* ViewController.swift in Sources */,
 				E869690D273D73580059EE93 /* AppDelegate.swift in Sources */,
+				E814033A273FFCEB0036DF7F /* MyActivity.swift in Sources */,
 				E869690F273D73580059EE93 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
