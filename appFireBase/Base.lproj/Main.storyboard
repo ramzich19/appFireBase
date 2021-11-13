@@ -86,7 +86,7 @@
                                                     </constraints>
                                                     <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                                    <textInputTraits key="textInputTraits" returnKeyType="done" textContentType="name"/>
+                                                    <textInputTraits key="textInputTraits" autocorrectionType="no" returnKeyType="done" textContentType="name"/>
                                                 </textField>
                                                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Введите Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sxY-3d-Wyk">
                                                     <rect key="frame" x="0.0" y="63" width="382" height="45"/>
@@ -97,7 +97,7 @@
                                                     </constraints>
                                                     <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                                    <textInputTraits key="textInputTraits" keyboardType="emailAddress" returnKeyType="done" textContentType="email"/>
+                                                    <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="emailAddress" returnKeyType="done" textContentType="email"/>
                                                 </textField>
                                                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Введите Пароль" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tnD-ID-5mU">
                                                     <rect key="frame" x="0.0" y="126" width="382" height="45"/>
@@ -131,14 +131,28 @@
                                                 </button>
                                             </subviews>
                                         </stackView>
+                                        <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2fP-fh-dBg">
+                                            <rect key="frame" x="58" y="386" width="298" height="23"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="23" id="dkY-yb-4zf"/>
+                                            </constraints>
+                                            <state key="normal" title="Button"/>
+                                            <buttonConfiguration key="configuration" style="plain" title="Забыл пароль"/>
+                                            <connections>
+                                                <segue destination="dJz-3y-b22" kind="show" id="VuQ-jC-InZ"/>
+                                            </connections>
+                                        </button>
                                     </subviews>
                                     <constraints>
                                         <constraint firstItem="Qgg-hU-5cv" firstAttribute="leading" secondItem="FUP-RD-Y4U" secondAttribute="leading" constant="16" id="L6a-Pc-J2P"/>
                                         <constraint firstAttribute="trailing" secondItem="Qgg-hU-5cv" secondAttribute="trailing" constant="16" id="Lm7-Sp-pGa"/>
                                         <constraint firstItem="Qgg-hU-5cv" firstAttribute="top" secondItem="Svn-DL-H4y" secondAttribute="bottom" constant="30" id="M6n-wa-SZX"/>
+                                        <constraint firstItem="2fP-fh-dBg" firstAttribute="top" secondItem="MPd-29-HUB" secondAttribute="bottom" constant="7.5" id="PWV-Mo-TNN"/>
                                         <constraint firstItem="MPd-29-HUB" firstAttribute="top" secondItem="Qgg-hU-5cv" secondAttribute="bottom" constant="30" id="U9o-hd-BzI"/>
                                         <constraint firstItem="Svn-DL-H4y" firstAttribute="centerX" secondItem="FUP-RD-Y4U" secondAttribute="centerX" id="WYS-PX-qNV"/>
+                                        <constraint firstAttribute="trailing" secondItem="2fP-fh-dBg" secondAttribute="trailing" constant="16" id="WjU-AI-E56"/>
                                         <constraint firstItem="MPd-29-HUB" firstAttribute="centerX" secondItem="FUP-RD-Y4U" secondAttribute="centerX" id="eAU-tn-uou"/>
+                                        <constraint firstItem="2fP-fh-dBg" firstAttribute="leading" secondItem="FUP-RD-Y4U" secondAttribute="leading" constant="16" id="feG-II-cze"/>
                                         <constraint firstItem="Svn-DL-H4y" firstAttribute="top" secondItem="FUP-RD-Y4U" secondAttribute="top" constant="30" id="vVx-s6-Z0V"/>
                                     </constraints>
                                 </view>
@@ -187,6 +201,106 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HSa-x3-k7z" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="34.782608695652179" y="83.705357142857139"/>
+        </scene>
+        <!--Forgot Password View Controller-->
+        <scene sceneID="Wz8-i5-F7X">
+            <objects>
+                <viewController storyboardIdentifier="ForgotPasswordViewController" id="dJz-3y-b22" customClass="ForgotPasswordViewController" customModule="appFireBase" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vEc-0C-iHQ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="qoc-LR-W47">
+                                <rect key="frame" x="0.0" y="31" width="414" height="865"/>
+                            </imageView>
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0Zf-Ce-nCq">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="833"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="kqs-Qc-ccA">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="833"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Сброс пароля" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VGM-wL-iXP">
+                                            <rect key="frame" x="107.5" y="30" width="199" height="58"/>
+                                            <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="36"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="18" translatesAutoresizingMaskIntoConstraints="NO" id="STQ-Wz-e00">
+                                            <rect key="frame" x="16" y="118" width="382" height="45"/>
+                                            <subviews>
+                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Введите Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Nr6-xg-nyX">
+                                                    <rect key="frame" x="0.0" y="0.0" width="382" height="45"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="45" id="Tlu-Ym-EdT"/>
+                                                    </constraints>
+                                                    <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                    <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="emailAddress" returnKeyType="done" textContentType="email"/>
+                                                </textField>
+                                            </subviews>
+                                        </stackView>
+                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="qzq-iy-XhA">
+                                            <rect key="frame" x="162.5" y="193" width="89.5" height="31"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ADD-Gq-6FI">
+                                                    <rect key="frame" x="0.0" y="0.0" width="89.5" height="31"/>
+                                                    <state key="normal" title="Button"/>
+                                                    <buttonConfiguration key="configuration" style="plain" title="Сбросить"/>
+                                                    <connections>
+                                                        <action selector="forgotPasswordAction:" destination="dJz-3y-b22" eventType="touchUpInside" id="b2S-Z9-xck"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                        </stackView>
+                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SUQ-4L-eEy">
+                                            <rect key="frame" x="16" y="30" width="39" height="41"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <state key="normal" title="Button"/>
+                                            <buttonConfiguration key="configuration" style="plain" title="X">
+                                                <fontDescription key="titleFontDescription" type="system" pointSize="22"/>
+                                                <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </buttonConfiguration>
+                                            <connections>
+                                                <action selector="closeAction:" destination="dJz-3y-b22" eventType="touchUpInside" id="eep-0z-MPZ"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="VGM-wL-iXP" firstAttribute="top" secondItem="kqs-Qc-ccA" secondAttribute="top" constant="30" id="Ftj-MZ-uDf"/>
+                                        <constraint firstItem="VGM-wL-iXP" firstAttribute="centerX" secondItem="kqs-Qc-ccA" secondAttribute="centerX" id="Ll9-Wk-5TG"/>
+                                        <constraint firstItem="qzq-iy-XhA" firstAttribute="centerX" secondItem="kqs-Qc-ccA" secondAttribute="centerX" id="SL3-dg-Mwk"/>
+                                        <constraint firstItem="qzq-iy-XhA" firstAttribute="top" secondItem="STQ-Wz-e00" secondAttribute="bottom" constant="30" id="jiu-Bt-Tqh"/>
+                                        <constraint firstItem="STQ-Wz-e00" firstAttribute="leading" secondItem="kqs-Qc-ccA" secondAttribute="leading" constant="16" id="v0E-m5-0s1"/>
+                                        <constraint firstAttribute="trailing" secondItem="STQ-Wz-e00" secondAttribute="trailing" constant="16" id="wYg-qp-OaU"/>
+                                        <constraint firstItem="STQ-Wz-e00" firstAttribute="top" secondItem="VGM-wL-iXP" secondAttribute="bottom" constant="30" id="yWX-Sc-EBs"/>
+                                    </constraints>
+                                </view>
+                                <blurEffect style="dark"/>
+                            </visualEffectView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="1ey-IP-pwh"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="0Zf-Ce-nCq" firstAttribute="leading" secondItem="1ey-IP-pwh" secondAttribute="leading" id="0KR-dD-CNJ"/>
+                            <constraint firstItem="0Zf-Ce-nCq" firstAttribute="top" secondItem="1ey-IP-pwh" secondAttribute="top" id="3st-Ve-eu4"/>
+                            <constraint firstAttribute="bottom" secondItem="0Zf-Ce-nCq" secondAttribute="bottom" constant="9" id="OZP-Oy-Hps"/>
+                            <constraint firstAttribute="bottom" secondItem="qoc-LR-W47" secondAttribute="bottom" id="g5l-Jn-17R"/>
+                            <constraint firstItem="qoc-LR-W47" firstAttribute="leading" secondItem="1ey-IP-pwh" secondAttribute="leading" id="jhO-zb-Ypb"/>
+                            <constraint firstItem="qoc-LR-W47" firstAttribute="top" secondItem="1ey-IP-pwh" secondAttribute="top" id="pFo-lo-t1M"/>
+                            <constraint firstItem="0Zf-Ce-nCq" firstAttribute="trailing" secondItem="1ey-IP-pwh" secondAttribute="trailing" id="sBv-em-BQY"/>
+                            <constraint firstItem="qoc-LR-W47" firstAttribute="trailing" secondItem="1ey-IP-pwh" secondAttribute="trailing" id="vmf-QW-V2L"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="eEi-Jw-olC"/>
+                    <connections>
+                        <outlet property="emailField" destination="Nr6-xg-nyX" id="98r-61-pea"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fcS-TK-Wz3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2641" y="84"/>
         </scene>
     </scenes>
     <resources>

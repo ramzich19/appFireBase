@@ -16,6 +16,7 @@
 		E8696919273D73590059EE93 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8696917273D73590059EE93 /* LaunchScreen.storyboard */; };
 		E8696921273D7DAD0059EE93 /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8696920273D7DAD0059EE93 /* AuthViewController.swift */; };
 		E8696923273D83C60059EE93 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E8696922273D83C60059EE93 /* GoogleService-Info.plist */; };
+		E87D1146273E8C9400FE461A /* ForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E87D1145273E8C9400FE461A /* ForgotPasswordViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		E869691A273D73590059EE93 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E8696920273D7DAD0059EE93 /* AuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
 		E8696922273D83C60059EE93 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		E87D1145273E8C9400FE461A /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +95,7 @@
 				E869691A273D73590059EE93 /* Info.plist */,
 				E8696920273D7DAD0059EE93 /* AuthViewController.swift */,
 				E8696922273D83C60059EE93 /* GoogleService-Info.plist */,
+				E87D1145273E8C9400FE461A /* ForgotPasswordViewController.swift */,
 			);
 			path = appFireBase;
 			sourceTree = "<group>";
@@ -214,6 +217,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E8696921273D7DAD0059EE93 /* AuthViewController.swift in Sources */,
+				E87D1146273E8C9400FE461A /* ForgotPasswordViewController.swift in Sources */,
 				E8696911273D73580059EE93 /* ViewController.swift in Sources */,
 				E869690D273D73580059EE93 /* AppDelegate.swift in Sources */,
 				E869690F273D73580059EE93 /* SceneDelegate.swift in Sources */,

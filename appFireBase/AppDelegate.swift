@@ -7,13 +7,22 @@
 
 import UIKit
 import Firebase
+import FBSDKCoreKit
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
-
+//    @available(ios 9.0, *)
+//    func application( app: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey : Any] = [:]) -> Bool {
+//        FBSDKApplicationDelegate.sharedInstance().application(app, open: url, options: options)
+//        return true
+//    }
+    
+    
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         FirebaseApp.configure()
+//        FBSDKApplicatonDelegate.sharedInstance().application(application, didFinishLaunchingWithOptions: launchOptions)
         return true
     }
 

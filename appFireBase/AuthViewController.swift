@@ -7,6 +7,7 @@
 
 import UIKit
 import Firebase
+import FBSDKLoginKit
 class AuthViewController: UIViewController {
     var signup:Bool = true{
         willSet{
@@ -35,6 +36,12 @@ class AuthViewController: UIViewController {
         nameField.delegate = self
         emailField.delegate = self
         passwordField.delegate = self
+//        let buttonFB = FBSDKLoginButton()
+//        buttonFB.delegate = self
+//        buttonFB.readPermissions = ["email", "public_profile"]
+//        buttonFB.frame.origin.y = 500
+//        buttonFB.frame.origin.x = 100
+//        self.view.addSubview(buttonFB)
 
     }
     
@@ -85,3 +92,16 @@ extension AuthViewController:UITextFieldDelegate{
     }
 }
 
+//extension AuthViewController:FBSDKLoginButtonDelegate{
+//    func loginButton(_ loginButton: FBSDKLoginButton!, didCompleteWith result: FBSDKLoginManagerLoginResult!, error: Error!) {
+//        if error == nil{
+//
+//        }
+//    }
+//
+//    func loginButtonDidLogOut(_ loginButton: FBSDKLoginButton!) {
+//        print("Logout")
+//    }
+//
+//
+//}
